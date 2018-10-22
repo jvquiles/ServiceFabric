@@ -12,7 +12,7 @@ namespace AgentHub
 
             try
             {
-                ServiceRuntime.RegisterServiceAsync("AgentConversationApplication",
+                ServiceRuntime.RegisterServiceAsync("AgentConversation",
                     (statelessServiceContext) => new AgentService(statelessServiceContext)).GetAwaiter().GetResult();
             }
             catch (Exception ex)

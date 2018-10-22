@@ -12,7 +12,7 @@ namespace Agent
 
             try
             {
-                ActorRuntime.RegisterActorAsync<ConversatorActor>(
+                ActorRuntime.RegisterActorAsync<AgentConversation>(
                    (context, actorType) => new ActorService(context, actorType)).GetAwaiter().GetResult();
 
                 Thread.Sleep(Timeout.Infinite);

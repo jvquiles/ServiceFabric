@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agent", "Agent\Agent.csproj", "{B127A76B-3780-4E41-B328-04B00741D124}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent", "Agent\Agent.csproj", "{B127A76B-3780-4E41-B328-04B00741D124}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgentHub", "AgentHub\AgentHub.csproj", "{2D1B45ED-9864-48BE-8E00-12D7B9D40CE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentHub", "AgentHub\AgentHub.csproj", "{2D1B45ED-9864-48BE-8E00-12D7B9D40CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentBalancer", "AgentFeeder\AgentBalancer.csproj", "{D498F5F9-E6AC-4F22-B60D-78228FCC5334}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B127A76B-3780-4E41-B328-04B00741D124} = {B127A76B-3780-4E41-B328-04B00741D124}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{2D1B45ED-9864-48BE-8E00-12D7B9D40CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D1B45ED-9864-48BE-8E00-12D7B9D40CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D1B45ED-9864-48BE-8E00-12D7B9D40CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D498F5F9-E6AC-4F22-B60D-78228FCC5334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D498F5F9-E6AC-4F22-B60D-78228FCC5334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D498F5F9-E6AC-4F22-B60D-78228FCC5334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D498F5F9-E6AC-4F22-B60D-78228FCC5334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
