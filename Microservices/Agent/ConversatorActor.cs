@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 namespace Agent
 {
 
-    [ActorServiceAttribute(Name = "AgentConversation")]
+    [ActorServiceAttribute(Name = "ConversatorActor")]
     [StatePersistence(StatePersistence.Volatile)]
-    public class AgentConversation : Actor, IActor
+    public class ConversatorActor : Actor, IConversatorActor
     {
-        public AgentConversation(ActorService actorService, ActorId actorId) : base(actorService, actorId)
+        public ConversatorActor(ActorService actorService, ActorId actorId) : base(actorService, actorId)
         {
         }
 
